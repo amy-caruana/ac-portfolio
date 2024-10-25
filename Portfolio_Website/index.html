@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="images/page_logo.png" sizes="32x32" type="image/png">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Three.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- fflate library -->
+    <script src="https://cdn.jsdelivr.net/npm/fflate@0.8.2/umd/index.min.js"></script>
+    <!-- FBXLoader library -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/FBXLoader.js"></script>
+    <!-- OrbitControls library -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    </head>
+</head>
+
+<body>
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">AC| My Portfolio<span class="animate" style="--i:1;"></span></a>
+        
+        <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+            <span class="active-nav"></span>
+            <span class="animate" style="--i:2;"></span>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home show-animate" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Amy!</span><span class="animate" style="--i:2;"></span></h1>
+            <div class="text-animate">
+                <h3>Front-End Developer</h3>
+                <span class="animate" style="--i:3;"></span>
+            </div>
+            <p>I am an eager learner who is constantly looking for opportunities to acquire new skills. 
+                I am particularly enthusiastic about applying my knowledge and experience in UX Design, Web Design & Development, App Design & Development, aswell as Game Design & Development and overall Multimedia Software Development. 
+                I aim to contribute to a professional organisation with sincere devotion, diligence, and commitment.
+                <span class="animate" style="--i:4;"></span>
+            </p>
+                <div class="btn-box">
+                <a href="#contact" class="btn">Hire Me</a>
+                <a href="#contact" class="btn">Let's Talk</a>
+                <span class="animate" style="--i:5;"></span>
+            </div>
+        </div>
+
+        <div class="home-sci">
+            <a href="https://www.facebook.com/amy.caruana.20/"><i class='bx bxl-facebook'></i></a>
+            <a href="https://t.me/xmaze44"><i class='bx bxl-telegram'></i></a>
+            <a href="https://www.linkedin.com/in/amy-caruana-345247311/"><i class='bx bxl-linkedin'></i></a>
+            <span class="animate" style="--i:6;"></span>
+        </div>
+
+        <div class="home-imgHover"></div>
+        <span class="animate home-img" style="--i:7;"></span>
+
+        <!-- New container for the Three.js animation -->
+        <div id="animation-container"></div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+        <div class="about-img">
+            <img src="images/test2-modified.png" alt="">
+            <span class="circle-spin"></span>
+            <span class="animate scroll" style="--i:2;"></span>
+        </div>
+
+        <div class="about-content">
+            <h3>Hi there, get to know me!<span class="animate scroll" style="--i:3;"></span></h3>
+            <p>Hello! My name is Amy. I have just finished my final year of my Bachelor's Degree in BSc. Multimedia Software Development at MCAST. 
+                I have a deep passion for both gaming and Formula 1, which drives my enthusiasm for designing, programming, and developing. 
+                My expertise spans a wide range of programming languages, including HTML, CSS, JavaScript, Python, PHP, Vue.js, OOP, and C#. 
+                I am also proficient in using design and development tools such as Adobe XD, Photoshop, Illustrator, Premiere Pro, After Effects, Blender, and Unity. 
+                Additionally, I have experience with Fmod and Ableton for audio and music production, as well as WordPress, Power Apps, and Power BI for web development and business analytics. 
+                My diverse skill set allows me to create immersive gaming experiences and innovative software solutions, and I am dedicated to delivering high-quality results in every project I undertake. 
+                I am passionate about both front-end and back-end development, as my course focused on both areas, allowing me to approach projects with a full-stack perspective. I love working in a team and thrive in collaborative environments. I am an open-minded person who enjoys learning about different cultures and perspectives, which continually inspires me in my work.
+                I am always eager to learn new things and continually improve the skills I already have. My diverse skill set allows me to create immersive gaming experiences and innovative software solutions, and I am dedicated to delivering high-quality results in every project I undertake.
+                I look forward to connecting with like-minded professionals and exploring new opportunities in game development, multimedia design, and software engineering.
+                <span class="animate scroll" style="--i:4;"></span>
+            </p>
+
+            <div class="btn-box btns">
+                <a href="#contact" class="btn">Contact Me</a>
+                <span class="animate scroll" style="--i:5;"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- education section design -->
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Journey</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Education<span class="animate scroll" style="--i:2;"></span></h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2021 - 2024</div>
+                            <h3>Undergraduate Degree - The Malta College of Arts, Science & Technology</h3>
+                            <p>Bachelor of Science (Honours) in Multimedia Software Development</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2022 - 2023</div>
+                            <h3>Erasmus - Latvia University of Life Sciences and Technologies</h3>
+                            <p>Erasmus Opportunity in Latvia during the 2nd year of my studies.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2019 - 2021</div>
+                            <h3>Advanced Diploma - The Malta College of Arts, Science & Technology</h3>
+                            <p>Advanced Diploma in IT (Multimedia Software Development)</p>
+                        </div>
+                    </div>
+
+                    <span class="animate scroll" style="--i:3;"></span>
+                </div>
+            </div>
+
+            <div class="education-column">
+                <h3 class="title">Experience<span class="animate scroll" style="--i:5;"></span></h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2023 - 2024</div>
+                            <h3>Student Apprentice - Information Management Unit</h3>
+                            <p>I crafted websites using WordPress, ensuring seamless user experiences and developed dynamic applications to meet diverse business needs. I provided comprehensive technical support to optimize system performance and enhanced website responsiveness for improved accessibility across devices. Additionally, I produced compelling video content using Adobe After Effects and Premiere Pro, and designed captivating posters and banners with precision using Adobe Photoshop. I presented insightful data analysis through Power BI and utilized Power Apps to innovate solutions such as a bespoke visitor management system and a user-friendly Quick Access app, which streamlined navigation for all employees by enabling intuitive filtering through a plethora of application icons.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2022 - 2022</div>
+                            <h3>Student Apprentice - University of Malta</h3>
+                            <p>I was assigned to develop a program that allowed users to input certain variables and choose a specific building type. The program would then output if the specific building type chosen is a low-polluting building, very-low polluting, or a non-low-polluting building, it would then also calculate and display the total energy usage per unit area.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2021 - 2021</div>
+                            <h3>IT and networking technical support - Dingli Local Council</h3>
+                            <p>I took part in one of the largest projects which consisted in assisting a local council to convert from a private network to a government domain-based WAN. It involved a wide variety of tasks ranging from the installation of software, installing printers, data transfers, NAS drives, data collection, etc.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2019 - 2020</div>
+                            <h3>Assistance Network Technician - Vodafone</h3>
+                            <p>I was responsible for the configuration of routers and performing general administrative tasks, ensuring the smooth operation and maintenance of network systems. Additionally, I was assigned to assist with the development and introduction of 5G technology in various cities across Malta. This involved collaborating with technical teams, planning and executing network upgrades, and ensuring the successful implementation and rollout of 5G services to enhance connectivity and improve user experiences in these areas.</p>
+                        </div>
+                    </div>
+
+                    <span class="animate scroll" style="--i:6;"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- skills section design -->
+<section class="skills" id="skills">
+    <h2 class="heading">My <span>Skills</span><span class="animate scroll" style="--i:1;"></span></h2>
+    <div class="skills-row">
+        <!-- Coding Skills -->
+        <div class="skills-column">
+            <h3 class="title">Coding Skills<span class="animate scroll" style="--i:2;"></span></h3>
+            <div class="skills-box">
+                <div class="skills-content">
+                    <div class="progress">
+                        <h3>HTML <span>90%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 90%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>CSS <span>90%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 90%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>JavaScript <span>90%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 90%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Python <span>80%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 80%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>PHP <span>65%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 65%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>OOP <span>85%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 85%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>C# <span>80%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 80%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Vue.js <span>75%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 75%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Angular <span>65%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 65%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>React <span>65%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 65%;"></span></div>
+                    </div>
+                </div>
+                <span class="animate scroll" style="--i:3;"></span>
+            </div>
+        </div>
+        <!-- Design Skills -->
+        <div class="skills-column">
+            <h3 class="title">Design Skills<span class="animate scroll" style="--i:5;"></span></h3>
+            <div class="skills-box">
+                <div class="skills-content">
+                    <div class="progress">
+                        <h3>Adobe XD <span>90%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 90%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Adobe Photoshop <span>90%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 90%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Adobe Illustrator <span>85%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 85%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Adobe Premiere Pro <span>75%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 75%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Adobe After Effects <span>75%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 75%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Figma <span>70%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 70%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Blender <span>70%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 70%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Unity <span>75%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 75%;"></span></div>
+                    </div>
+                </div>
+                <span class="animate scroll" style="--i:6;"></span>
+            </div>
+        </div>
+        <!-- Audio/Visual Tools -->
+        <div class="skills-column">
+            <h3 class="title">Audio/Visual Tools<span class="animate scroll" style="--i:8;"></span></h3>
+            <div class="skills-box">
+                <div class="skills-content">
+                    <div class="progress">
+                        <h3>Fmod <span>60%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 60%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Ableton <span>65%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 65%;"></span></div>
+                    </div>
+                </div>
+                <span class="animate scroll" style="--i:9;"></span>
+            </div>
+        </div>
+        <!-- Development Tools -->
+        <div class="skills-column">
+            <h3 class="title">Development Tools<span class="animate scroll" style="--i:11;"></span></h3>
+            <div class="skills-box">
+                <div class="skills-content">
+                    <div class="progress">
+                        <h3>WordPress <span>90%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 90%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Power Apps <span>75%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 75%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Power BI <span>70%</span></h3>
+                        <div class="bar"><span class="inactive" style="--progress-width: 70%;"></span></div>
+                    </div>
+                </div>
+                <span class="animate scroll" style="--i:12;"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+    <!-- projects section design -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Browse My Recent <span>Projects</span><span class="animate scroll" style="--i:1;"></span></h2>
+        <div class="slideshow-container">
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-card slide"> <span class="animate scroll" style="--i:1;"></span>
+                    <div class="project-content">
+                        <div class="project-front">
+                            <img src="images/MockUps/AgricultureApp3.png" alt="Project 1" class="project-img">
+                            <h3 class="project-title">Agricultural Prediction Mobile Application</h3>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-info">
+                                <p>This application was built using Android Studio. It was trained with two different machine learning algorithms; LSTM and GRU with the help of a weather API in order
+                                    to predict future temperatures in greenhouses and to help farmers to regulate their temperatures for the best crop yield.</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="https://github.com/Amy-Car20/AC_PrototypeCode" class="btn project-btn" target="_blank">Github Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card slide">
+                    <div class="project-content">
+                        <div class="project-front">
+                            <img src="images/MockUps/TravelAppConcept2.png" alt="Project 2" class="project-img">
+                            <h3 class="project-title">Travel App Concept</h3>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-info">
+                                <p>A travel app concept designed to help users plan their trips efficiently.</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="https://xd.adobe.com/view/af35d968-68a3-47d9-8d77-d42b4c17cfe6-fa66/" class="btn project-btn" target="_blank">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card slide">
+                    <div class="project-content">
+                        <div class="project-front">
+                            <img src="images/MockUps/RoyalCinemasMockUp2.png" alt="Project 3" class="project-img">
+                            <h3 class="project-title">Cinema App Concept</h3>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-info">
+                                <p>A concept for a cinema app that allows users to book tickets and watch trailers.</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="https://xd.adobe.com/view/5fa86ead-cc64-4eef-ae3d-bc56235cf62b-0afb/screen/4a93d6f3-5650-4f16-b841-260c836141ae" class="btn project-btn" target="_blank">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card slide">
+                    <div class="project-content">
+                        <div class="project-front">
+                            <img src="images/MockUps/VR.png" alt="Project 4" class="project-img">
+                            <h3 class="project-title">VR Museum</h3>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-info">
+                                <p>An interactive VR museum that allows virtual tours and interactive exhibits.</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="https://github.com/" class="btn project-btn" target="_blank">Github [to be added]</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card slide">
+                    <div class="project-content">
+                        <div class="project-front">
+                            <img src="images/MockUps/Esplora2_shr.png" alt="Project 5" class="project-img">
+                            <h3 class="project-title">Poster Concept Design for Esplora</h3>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-info">
+                                <p>A poster concept design for the Esplora Science Centre.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card slide">
+                    <div class="project-content">
+                        <div class="project-front">
+                            <img src="" alt="" class="project-img">
+                            <h3 class="project-title">TBC</h3>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-info">
+                                <p>A Unity-based game with immersive graphics and engaging gameplay. It was created during the pandemic to create that reality into a fun game whilst also spreading awareness about the deadly virus.</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="https://github.com/" class="btn project-btn" target="_blank">Github [to be added]</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+            <!-- Add navigation buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+        
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+        <form onsubmit="sendEmail(event)">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <span class="focus"></span>
+                </div>
+
+                <span class="animate scroll" style="--i:3;"></span>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="tel" id="mobileNumber" placeholder="Mobile Number">
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" id="subject" placeholder="Subject" required>
+                    <span class="focus"></span>
+                </div>
+
+                <span class="animate scroll" style="--i:5;"></span>
+            </div>
+
+            <div class="textarea-field">
+                <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <span class="focus"></span>
+
+                <span class="animate scroll" style="--i:7;"></span>
+            </div>
+
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Submit</button>
+
+                <span class="animate scroll" style="--i:9;"></span>
+            </div>
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 | Design and
+                Maintenance by Amy Caruana | All
+                Rights Reserved</p>
+
+            <span class="animate scroll" style="--i:9;"></span>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+
+            <span class="animate scroll" style="--i:3;"></span>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<script>
+    function sendEmail(event) {
+        event.preventDefault();
+
+        const fullName = document.getElementById('fullName').value;
+        const email = document.getElementById('email').value;
+        const mobileNumber = document.getElementById('mobileNumber').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+
+        const mailtoLink = `mailto:amycaruana2000@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${fullName}\nEmail: ${email}\nMobile Number: ${mobileNumber}\n\nMessage:\n${message}`)}`;
+
+        window.location.href = mailtoLink;
+    }
+</script>
