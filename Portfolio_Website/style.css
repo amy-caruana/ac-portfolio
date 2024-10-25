@@ -122,7 +122,8 @@ section {
 
 .home-content .text-animate {
     position: relative;
-    width: 32.8rem;
+    display: inline-block;
+    width: 33.8rem;
 }
 
 .home-content .text-animate h3 {
@@ -134,7 +135,7 @@ section {
     background-image: linear-gradient(var(--main-color), var(--main-color));
     background-repeat: no-repeat;
     -webkit-background-clip: text;
-    background-position: -33rem 0;
+    background-position: -34rem 0;
 }
 
 .home.show-animate .home-content .text-animate h3 {
