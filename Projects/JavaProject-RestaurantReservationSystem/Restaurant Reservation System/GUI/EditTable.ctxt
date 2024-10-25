@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=EditTable
+comment1.params=
+comment1.target=EditTable()
+comment2.params=title
+comment2.target=javax.swing.JLabel\ createLabel(java.lang.String)
+comment3.params=
+comment3.target=void\ clearFields()
+comment4.params=
+comment4.target=boolean\ validateEmptyFields()
+comment5.params=
+comment5.target=void\ disableButtons()
+comment6.params=
+comment6.target=void\ enableButtons()
+comment7.params=
+comment7.target=void\ disablePanelButtons()
+comment8.params=
+comment8.target=void\ enablePanelButtons()
+comment9.params=event
+comment9.target=void\ actionPerformed(java.awt.event.ActionEvent)
+numComments=10

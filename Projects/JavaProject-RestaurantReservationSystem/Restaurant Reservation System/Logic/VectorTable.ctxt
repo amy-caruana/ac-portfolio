@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=VectorTable
+comment1.params=
+comment1.target=VectorTable()
+comment2.params=table
+comment2.target=void\ addTable(Table)
+comment3.params=table
+comment3.target=void\ removeTable(Table)
+comment4.params=
+comment4.target=int\ getSize()
+comment5.params=ncheck
+comment5.target=boolean\ checkTableSeats(int)
+comment6.params=
+comment6.target=void\ viewAllTables()
+numComments=7

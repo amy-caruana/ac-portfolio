@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ViewPoints
+comment1.params=
+comment1.target=ViewPoints()
+comment2.params=title
+comment2.target=javax.swing.JLabel\ createLabel(java.lang.String)
+comment3.params=
+comment3.target=void\ disablePanelButtons()
+comment4.params=
+comment4.target=void\ enablePanelButtons()
+comment5.params=event
+comment5.target=void\ actionPerformed(java.awt.event.ActionEvent)
+numComments=6

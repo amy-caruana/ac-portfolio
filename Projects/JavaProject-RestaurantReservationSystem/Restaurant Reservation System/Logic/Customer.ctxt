@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Customer
+comment1.params=
+comment1.target=Customer()
+comment2.params=name\ surname\ mobileNum\ email
+comment2.target=Customer(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment3.params=
+comment3.target=boolean\ getLoyaltyFlag()
+comment4.params=flg
+comment4.target=void\ setLoyaltyFlag(boolean)
+comment5.params=
+comment5.target=int\ getPoints()
+comment6.params=points
+comment6.target=void\ setPoints(int)
+comment7.params=
+comment7.target=java.lang.String\ ToString()
+numComments=8

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=AddCustomer
+comment1.params=
+comment1.target=AddCustomer()
+comment2.params=title
+comment2.target=javax.swing.JLabel\ createLabel(java.lang.String)
+comment3.params=
+comment3.target=void\ clearFields()
+comment4.params=
+comment4.target=boolean\ validateEmptyFields()
+comment5.params=mobileNum
+comment5.target=boolean\ validateMobileNum(java.lang.String)
+comment6.params=email
+comment6.target=boolean\ validateEmail(java.lang.String)
+comment7.params=event
+comment7.target=void\ actionPerformed(java.awt.event.ActionEvent)
+numComments=8

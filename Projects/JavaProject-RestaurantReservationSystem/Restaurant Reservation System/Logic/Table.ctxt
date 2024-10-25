@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Table
+comment1.params=
+comment1.target=Table()
+comment2.params=tableId\ capacity
+comment2.target=Table(java.lang.String,\ int)
+comment3.params=
+comment3.target=java.lang.String\ gettableId()
+comment4.params=
+comment4.target=java.lang.String\ getTableNumber()
+comment5.params=tableId
+comment5.target=void\ settableId(java.lang.String)
+comment6.params=tableId
+comment6.target=void\ setTableNumber(java.lang.String)
+comment7.params=
+comment7.target=int\ getTableCapacity()
+comment8.params=capacity
+comment8.target=void\ setTableCapacity(int)
+comment9.params=reservationTime
+comment9.target=boolean\ isAvailable(java.lang.String)
+numComments=10

@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Receptionist
+comment1.params=
+comment1.target=Receptionist()
+comment2.params=receptionistName\ userPassword\ userRights
+comment2.target=Receptionist(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment4.params=receptionist
+comment4.target=void\ setName(java.lang.String)
+comment5.params=
+comment5.target=java.lang.String\ getRights()
+comment6.params=receptionist
+comment6.target=void\ setRights(java.lang.String)
+comment7.params=
+comment7.target=java.lang.String\ getPassword()
+comment8.params=userPassword
+comment8.target=void\ setPassword(java.lang.String)
+comment9.params=
+comment9.target=java.lang.String\ toString()
+numComments=10

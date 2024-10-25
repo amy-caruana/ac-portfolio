@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=checkAvailability
+comment1.params=reservationDate
+comment1.target=checkAvailability(java.lang.String)
+comment2.params=event
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+numComments=3
