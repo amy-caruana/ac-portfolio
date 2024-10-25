@@ -1,0 +1,122 @@
+﻿@model WebAppAC.Models.Document
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Document</h4>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form id="uploadForm" asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Upload Document</label>
+                <input type="file" id="fileInput" name="file" class="form-control" />
+            </div>
+            <br />
+            <div class="form-group progress-container">
+                <div class="progress">
+                    <div id="progressBar" class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span id="status" class="text-muted"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" id="createButton" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#uploadForm").submit(function (e) {
+            e.preventDefault(); // Prevent default form submission
+
+            var title = $("#Title").val(); // Get the title value
+            var file = $("#fileInput")[0].files[0]; // Get the uploaded file
+
+            if (file) {
+                var formData = new FormData(); // Create a FormData object
+                formData.append("Title", title); // Add the title to the FormData
+                formData.append("file", file); // Add the file to the FormData
+
+                var xhr = new XMLHttpRequest(); // Create an XMLHttpRequest object
+
+                xhr.upload.addEventListener("progress", function (event) {
+                    if (event.lengthComputable) { // Check if progress is computable
+                        var percentComplete = event.loaded / event.total * 100;
+                        $("#progressBar").css("width", percentComplete + "%"); // Update progress bar width
+                        $("#progressBar").attr("aria-valuenow", percentComplete); // Update aria-valuenow
+                        $("#status").text(percentComplete.toFixed(2) + "% complete"); // Update status text
+                    }
+                });
+
+                xhr.onload = function () {
+                    if (this.status === 202) {
+                        // Document upload initiated, start polling for progress
+                        pollForProgress();
+                    } else if (this.status === 200) {
+                        // Upload successful, redirect to list view
+                        window.location.href = "/Home/Index";
+                    } else {
+                        // Handle upload failure
+                        console.error("Upload failed:", this.statusText);
+                    }
+                };
+
+                xhr.open("POST", "/Home/Create"); // Set the POST request URL
+                xhr.send(formData); // Send the FormData
+            } else {
+                alert("Please select a file to upload.");
+            }
+        });
+    });
+
+    function pollForProgress() {
+        var intervalId = setInterval(function () {
+            // Send an AJAX request to the server to get the current progress
+            $.ajax({
+                url: "/Home/GetUploadProgress", // Update the URL to match your server endpoint
+                type: "GET",
+                success: function (response) {
+                    var percentComplete = parseFloat(response); // Parse the progress value from the response
+                    if (!isNaN(percentComplete)) {
+                        // Update the progress bar value and status text
+                        $("#progressBar").css("width", percentComplete + "%");
+                        $("#progressBar").attr("aria-valuenow", percentComplete);
+                        $("#status").text(percentComplete.toFixed(2) + "% complete");
+                    }
+                    if (percentComplete >= 100) {
+                        // Stop polling when the progress reaches 100%
+                        clearInterval(intervalId);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    // Handle error
+                    console.error("Error retrieving upload progress:", error);
+                    clearInterval(intervalId); // Stop polling on error
+                }
+            });
+        }, 1000); // Polling interval in milliseconds (adjust as needed)
+    }
+</script>
+
+<style>
+    #progressBar {
+        width: 100%; /* Set the width to 100% for full width */
+    }
+</style>

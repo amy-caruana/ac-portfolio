@@ -1,0 +1,32 @@
+﻿@model WebAppAC.Models.Document
+
+@{
+    ViewData["Title"] = "Share";
+}
+
+
+<h1>Share</h1>
+
+<h4>Document</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Share" enctype="multipart/form-data">
+
+            <input type="hidden" name="documentId" value="@ViewData["DocumentId"]" />
+            <input type="hidden" name="userId" value="@ViewData["UserId"]" />
+            <div class="form-group">
+                <label for="recipient">Share with:</label>
+                <input type="text" class="form-control form-control-sm" id="recipient" name="recipient">
+            </div>
+
+            <br />
+            <button type="submit" class="btn btn-primary">Share</button>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

@@ -1,0 +1,47 @@
+﻿@model IEnumerable<WebAppAC.Models.Document>
+
+@{
+    ViewData["Title"] = "Shared";
+}
+
+<h2>Documents shared with you:</h2>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Author)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.File)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author)
+            </td>
+            <th>
+                <a href="@item.PDF" download>Download PDF</a>
+            </th>
+@*             <td>
+                <a href="/Home/Delete?documentId=@item.Id">Delete</a> 
+            </td> *@
+        </tr>
+}
+    </tbody>
+</table>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

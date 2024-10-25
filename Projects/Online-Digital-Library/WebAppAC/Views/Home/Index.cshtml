@@ -1,0 +1,64 @@
+﻿@model IEnumerable<WebAppAC.Models.Document>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>List</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Author)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.File)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>Date Uploaded</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author)
+            </td>
+                @if (item.Status == "1")
+                {
+                    <th>
+                        <a href="@item.PDF" download>Download PDF</a>
+                    </th>
+                }
+                else
+                {
+                    <meta http-equiv="refresh" content="5; url=@Url.Action("Index")" />
+                    <th>Conversion Pending</th>
+                }
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                <span>@item.DateUploaded.ToDateTime().ToShortDateString()</span>
+            </td>
+            <td>
+                <a href="/Home/Share?documentId=@item.Id&userId=@item.UserId">Share</a> |
+                <a href="/Home/Delete?documentId=@item.Id">Delete</a> 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
