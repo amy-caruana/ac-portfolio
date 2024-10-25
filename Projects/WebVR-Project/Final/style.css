@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #FEFAE0;
+} 
+
+h3{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 27px 25px;
+    text-decoration: none;
+    font-size: 25px;
+} 
+
+h3:hover{
+    color: #D4A373;
+}
+
+.sub-header{
+    font-family: 'body';
+}
+
+.header {
+    background: #CCD6AE;
+    color: white;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    top: 0;
+    position: relative;
+}
+
+#header-name{
+    font-family: 'headerFont';
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 5%;
+    font-size: 50px;    
+    padding-left: 4%;
+}
+
+.footer {
+    font-family: 'nav-bar';
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #CCD6AE;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+} 
+
+#svg{
+    padding-left: 20px;
+    width: 11%;
+    padding-top: 2px;
+    position: absolute;
+}
+
+#body{
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: 'body';
+    text-align: left;
+    font-size: 20px;
+}
+
+#sub{
+    font-family: 'body';
+    text-align: center;
+    font-size: 40px;
+}
+
+button{
+    font-family: 'body';
+    background-color: #c7bb75;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 20px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 45%;
+}
+
+.button1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#buttoninfo{
+    font-family: body;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 50px;
+}
+
+@font-face {
+    font-family: headerFont;
+    src: url(fonts/MileHeights-FreePersonalUse.otf);
+}
+
+@font-face {
+    font-family: nav-bar;
+    src: url(fonts/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: body;
+    src: url(fonts/Spartan-VariableFont_wght.ttf);
+}
+
+

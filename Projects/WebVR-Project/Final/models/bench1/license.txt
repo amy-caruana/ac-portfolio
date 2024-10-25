@@ -1,0 +1,11 @@
+Model Information:
+* title:	Bench
+* source:	https://sketchfab.com/3d-models/bench-df0cdb69807d42eba316292e7b08be76
+* author:	Denis Loginovskiy (https://sketchfab.com/denlog2)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Bench" (https://sketchfab.com/3d-models/bench-df0cdb69807d42eba316292e7b08be76) by Denis Loginovskiy (https://sketchfab.com/denlog2) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

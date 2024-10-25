@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@5.0.0/dist/aframe-event-set-component.min.js"></script>
+</head>
+
+<!--CTRL+ALT+I to inspect VR-->
+
+<body>
+    <script>
+        AFRAME.registerComponent('play-pause', {
+            init: function () {
+                var myVideo = document.querySelector('#art');
+                var videoControls = document.querySelector('#videoControls');
+                this.el.addEventListener('click', function () {
+                    if (myVideo.paused) {
+                        myVideo.play();
+                        videoControls.setAttribute('src', '#pause');
+
+                    } else {
+                        myVideo.pause();
+                        videoControls.setAttribute('src', '#play');
+                    }
+                });
+            }
+        });
+    </script>
+
+    <a-scene>
+        <a-assets>
+            <img id="abstract" src="images/abstract.jpg">
+            <img id="wood" src="images/wood2.jpg">
+            <img id="walls1" src="images/white-texture.jpg">
+            <img id="walls2" src="images/white-texture2.jpg">
+            <img id="white-gold" src="images/white-gold.jpg">
+            <img id="white-marble" src="images/black-marble.jpg">
+            <img id="play" src="images/play.png">
+            <img id="pause" src="images/pause.png">
+            <img id="big-painting" src="images/big-painting.png">
+            <img id="painting1" src="images/painting1.jpg">
+            <img id="painting2" src="images/painting2.jpg">
+            <img id="painting3" src="images/painting3.jpg">
+            <img id="logo" src="images/Logo.png">
+            <img id="metal" src="images/metal.jpg">
+            <img id="black-metal" src="images/black-metal.jpg">
+            <video id="art" src="video/Art-Video.mp4"></video>
+        </a-assets>
+
+        <!--Adding an environment preset-->
+        <a-entity
+            environment="preset: forest; dressingAmount: 400; groundColor: burlywood; groundColor2: navajowhite; groundTexture: squares; dressingColor: #568F56;">
+        </a-entity>
+
+        <a-entity class="environment" position="6.23335 0.36523 -5.46106"
+            light="intensity: 0.6; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10"
+            visible=""></a-entity>
+
+        <!--Cursor Component-->
+        <a-camera camera="" position="0 2.5 2.5" rotation="-90 -90 0" look-controls="" wasd-controls=""
+            data-aframe-inspector-original-camera="">
+            <a-entity cursor="" position="0 0 -1" geometry="primitive: sphere; radius: 0.005" material="color: orange"
+                raycaster="">
+            </a-entity>
+        </a-camera>
+
+        <!--Floor-->
+        <a-box src="#wood" position="0 0 -3.64704" scale="19.37 0.5 22.78" material="" geometry=""> </a-box>
+
+        <!--Walls with door-->
+        <a-box src="#walls1" position="-6.162 2.369 -14.522" scale="6 10 1" color="#3A3B3C">
+
+        </a-box>
+        <a-box src="#walls1" position="6.162 2.369 -14.522" scale="6 10 1" color="#3A3B3C">
+
+        </a-box>
+        <a-box src="#walls1" position="0.266 5.854 -14.522" scale="7 3 1" color="#3A3B3C">
+        </a-box>
+
+        <!--Left Wall-->
+        <a-box src="#walls1" position="-9.162 2.379 -4.028" scale="1 10 22" color="#3A3B3C">
+
+        </a-box>
+
+        <!--Right Wall-->
+        <a-box src="#walls1" position="9.162 2.391 -4.028" scale="1 10 22" color="#3A3B3C">
+
+        </a-box>
+
+        <!--Last Wall-->
+        <a-box src="#walls1" position="-0.030 2.369 6.358" scale="18 10 1" color="#3A3B3C">
+
+        </a-box>
+
+        <!--Roof-->
+        <a-entity geometry="primitive: cylinder; openEnded: true; thetaLength: 180"
+            material="side: double; src:#walls1; color:grey" rotation="0 90 90" scale="1.38 21.16 9"
+            position="-0.044 5.901 -4.291"></a-entity>
+
+        <!--Bench-->
+        <a-entity id="bench" gltf-model="models/bench2/scene.gltf" scale="2 2 2" position="0 0.27672 -3.858"
+            src="#walls1" rotation="0 -90 0">
+        </a-entity>
+
+        <!--Carpet-->
+        <a-entity id="carpet" gltf-model="models/carpet/scene.gltf" scale="0.05 0.05 0.05" position="0 0.27672 -3.858"
+            src="#walls1" rotation="0 -90 0">
+        </a-entity>
+
+        <!--Door-->
+        <a-entity id="door" gltf-model="models/door/scene.gltf" scale="-0.07 0.05 0.05" position="0 0.277 -14.05653"
+            rotation="">
+        </a-entity>
+
+        <!--Video-->
+        <a-video src="#art" width="8" height="4.5" position="-0.18144 3.83274 5.84468" material="" geometry=""
+            rotation="0 180 0" scale="1.2 1 1.2">
+            <!--Play - Pause-->
+            <a-image id="videoControls" src="#play" color="red" position="0 -3 0" scale="0.5 0.5 1" play-pause=""
+                material="" geometry=""></a-image>
+        </a-video>
+
+        <!--Statue-->
+        <a-entity id="statue" gltf-model="models/statue/scene.gltf" scale="0.12 0.12 0.1"
+            position="-6.55301 1.70457 -11.30701" rotation="0 45 0">
+        </a-entity>
+        <a-text value="Statue of Justice" color="white" position="-7.420 3.194 -12.671" text="align: center"
+            rotation="0 61.040 0">
+        </a-text>
+
+        <!--Logo-->
+        <a-box src="#logo" position="-4.414 3.49181 -13.98982" scale="1 1 0.05">
+        </a-box>
+
+        <!--Rotating abstract sphere-->
+        <a-entity id="sphere" position="-7.679 2.837 2.460" rotation="0 164.13261981011468 0"
+            animation="property: rotation; loop: true; dur: 10000">
+            <a-sphere src="#abstract" position="0 0 0" scale="0.9 0.9 0.9" material="" geometry="">
+            </a-sphere>
+        </a-entity>
+
+        <a-box src="#white-marble" geometry="" scale="2 2 1.910" position="-7.776 0.80893 2.43806">
+        </a-box>
+
+        <a-box src="#white-marble" geometry="" scale="2.38 0.14 2.48" position="-7.79547 1.90897 2.44391" material="">
+        </a-box>
+
+        <!--1st Painting-->
+        <a-box src="#painting1" scale="0.05 4.5 4.5" position="8.665 3.30172 2.18326">
+        </a-box>
+        <a-text value="Don Quixote" color="white" position="8.558 0.812 2.25826" text="align: center" rotation="0 -90 0"
+            id="don quixote">
+        </a-text>
+
+        <!--2nd Painting-->
+        <a-box src="#painting2" scale="0.05 4.5 4.5" position="8.665 3.30172 -3.98694">
+        </a-box>
+        <a-text value="Balloons" color="white" position="8.558 0.812 -3.94305" text="align: center" rotation="0 -90 0"
+            id="balloons">
+        </a-text>
+
+        <!--3rd Painting-->
+        <a-box src="#painting3" scale="0.05 4.5 4.5" position="8.665 3.30172 -9.98577">
+        </a-box>
+        <a-text value="Red Syre" color="white" position="8.558 0.812 -10.102" text="align: center" rotation="0 -90 0"
+            id="redsyre">
+        </a-text>
+
+        <!--4th Big Painting-->
+        <a-box id="bigone" src="#big-painting" scale="0.05 3.552 8.380" position="-8.55537 3.31916 -4.94975">
+        </a-box>
+        <a-text value="The Busy City" color="white" position="-8.31301 1.263 -4.71" text="align: center"
+            rotation="0 90 0">
+        </a-text>
+
+        <a-text value="All digital illustrations were done by a very talented 
+            friend of mine: Maya Laferla
+
+            All her other art illustrations can be found on: instagram.com/laferla_art" color="white"
+            text="align: center" position="5.961 3.22456 -13.98198"></a-text>
+
+        <a-text value="A rotating abstract sphere" color="white" position="-8.31301 4.174 2.55881" text="align: center"
+            rotation="0 90 0">
+        </a-text>
+
+        <!--Traffic lights-->
+        <a-entity rotation="0 -90 0" position="-1.77382 0.527 -14.08129">
+            <a-cylinder src="#metal" color="grey" height="10" radius="2" scale="0.06 1.03 0.09"
+                position="-4.902 0 -3.506"></a-cylinder>
+
+            <a-box src="#metal" color="grey" scale="0.63 2.02 0.74" position="-4.893 4.576 -3.488">
+            </a-box>
+
+            <a-sphere id="red" color="white" scale="0.23 0.23 0.25" position="-4.891 5.195 -3.132">
+            </a-sphere>
+
+            <a-sphere id="orange" color="white" scale="0.23 0.23 0.25" position="-4.900 4.562 -3.132"> </a-sphere>
+
+            <a-sphere id="green" color="green" scale="0.23 0.23 0.25" position="-4.892 3.937 -3.132"> </a-sphere>
+
+            <a-box color="yellow" scale="0.53 0.66 0.62" position="-4.907 1.844 -3.488"></a-box>
+
+            <a-cylinder id="traffic_button" color="grey" position="-4.897 1.844 -3.133" scale="0.1 0.08 -0.1"
+                rotation="-90 0 0" event-set__enter="_event: mouseenter; color: red"
+                event-set__leave="_event: mouseleave; color: grey"
+                event-set__tarcolg="_event: click; _target: #green; material.color: white;"
+                event-set__tarcolr="_event: click; _target: #red; material.color: red;">
+            </a-cylinder>
+        </a-entity>
+
+
+
+    </a-scene>
+</body>
+
+</html>

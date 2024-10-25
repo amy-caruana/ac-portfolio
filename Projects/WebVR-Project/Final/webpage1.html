@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@5.0.0/dist/aframe-event-set-component.min.js"></script>
+</head>
+
+<!--CTRL+ALT+I to inspect VR-->
+
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="abstract" src="images/abstract.jpg">
+            <img id="white-marble" src="images/black-marble.jpg">
+            <img id="metal" src="images/metal.jpg">
+            <img id="black-metal" src="images/black-metal.jpg">
+            <img id="logo" src="images/Logo.png">
+        </a-assets>
+
+        <!--Adding an environement preset-->
+        <a-entity
+            environment="preset: forest; dressingAmount: 400; groundColor: burlywood; groundColor2: navajowhite; groundTexture: squares; dressingColor: #568F56;">
+        </a-entity>
+
+        <a-text value="The background (sky + ground) were implemented via the use of a libary called 'a-frame environment component'. 
+        
+        This library allowed me to choose a preset for the background and alter it however I wanted to (in my case I added more trees and changed a few of the colours)." position="-1.002 2.849 -2.53027" text="color: #000000"></a-text>
+
+
+        <!--Cursor Component-->
+        <a-camera camera="" position="-3.174 1.6 2.93648" rotation="-4.583662361046592 9.39650784014548 0">
+            <a-entity cursor position="0 0 -1" geometry="primitive: sphere; radius: 0.005" material="color: orange">
+            </a-entity>
+        </a-camera>
+
+        <!--Rotating abstract sphere-->
+        <a-entity position="-2.576 1.600 -4.337" rotation="0 360 0"
+            animation="property: rotation; loop: true; dur: 10000">
+            <a-sphere src="#abstract" position="0 0 0" scale="0.5 0.5 0.5">
+            </a-sphere>
+        </a-entity>
+        <a-text value="Rotating abstract sphere" position="-3.9 2.289 -3.5"></a-text>
+
+        <a-cylinder src="#white-marble" color="lightgrey" scale="0.76 0.08 0.82" position="-2.576 1.061 -4.378">
+        </a-cylinder>
+
+        <a-box id="" src="#white-marble" color="lightgrey" position="-2.576 0.48462 -4.40404">
+        </a-box>
+
+        <!--Traffic lights-->
+        <a-cylinder src="#metal" color="grey" height="10" radius="2" material="" geometry="" scale="0.06 1.03 0.09"
+            position="-4.902 0 -3.506"></a-cylinder>
+
+        <a-box src="#metal" color="grey" material="" geometry="" scale="0.63 2.02 0.74" position="-4.893 4.576 -3.488">
+        </a-box>
+
+        <a-sphere id="red" color="white" material="" geometry="" scale="0.23 0.23 0.25" position="-4.891 5.195 -3.132">
+        </a-sphere>
+
+        <a-sphere id="orange" color="white" material="" geometry="" scale="0.23 0.23 0.25"
+            position="-4.900 4.562 -3.132"> </a-sphere>
+
+        <a-sphere id="green" color="green" scale="0.23 0.23 0.25" position="-4.892 3.937 -3.132"> </a-sphere>
+
+        <a-box color="yellow" material="" geometry="" scale="0.53 0.66 0.62" position="-4.907 1.844 -3.488"></a-box>
+
+        <a-cylinder id="traffic_button" color="grey" material="" geometry="" position="-4.897 1.844 -3.133"
+            scale="0.1 0.08 -0.1" rotation="-90 0 0" 
+            event-set__enter="_event: mouseenter; color: red"
+            event-set__leave="_event: mouseleave; color: grey"
+            event-set__tarcolg="_event: click; _target: #green; material.color: white;"
+            event-set__tarcolr="_event: click; _target: #red; material.color: red;">
+        </a-cylinder>
+
+        <a-text 
+            value="The button has an 2 interations, one that changes its colour on hover and one which when it is pressed, it changes the traffic light colours from green to red."
+            color="white" position="-10.295 1.844 -3.133"></a-text>
+
+        <a-box position="-7.95 1.844 -3.313" geometry="" scale="5.1 1.5 0.05"></a-box>
+
+        <!--Logo-->
+        <a-box src="#logo" rotation="-40.83 0 44.03" position="0.2242 0.972 -4.00957">
+        </a-box>
+
+    </a-scene>
+</body>
+
+</html>

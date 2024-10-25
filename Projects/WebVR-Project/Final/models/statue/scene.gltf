@@ -1,0 +1,317 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 15930,
+      "max": [
+        13.956533432006836,
+        10.281527519226074,
+        13.96845817565918
+      ],
+      "min": [
+        -13.946722030639648,
+        -10.940171241760254,
+        -13.900814056396484
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 191160,
+      "componentType": 5126,
+      "count": 15930,
+      "max": [
+        0.99980741739273071,
+        0.99997925758361816,
+        0.999808669090271
+      ],
+      "min": [
+        -0.9999384880065918,
+        -0.99999994039535522,
+        -0.99917721748352051
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 15930,
+      "max": [
+        0.99789810180664062,
+        0.99979817867279053,
+        0.9999924898147583,
+        1
+      ],
+      "min": [
+        -0.99997979402542114,
+        -0.99994486570358276,
+        -0.99995994567871094,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 15930,
+      "max": [
+        0.99947667121887207,
+        0.98390042781829834
+      ],
+      "min": [
+        0.00050882477080449462,
+        0.00052165699889883399
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 86964,
+      "max": [
+        15929
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "3dhdscan (https://sketchfab.com/3dhdscan)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/models/c4c3614fd73147c7ad7450b6677f0683",
+      "title": "Statue of Justice - Brno"
+    },
+    "generator": "Sketchfab-3.19.5",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 347856,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 127440,
+      "byteOffset": 347856,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 382320,
+      "byteOffset": 475296,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 254880,
+      "byteOffset": 857616,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1112496,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Zeleznak_baseColor.jpg"
+    },
+    {
+      "uri": "textures/Zeleznak_normal.jpg"
+    },
+    {
+      "uri": "textures/Zeleznak_metallicRoughness.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Zeleznak",
+      "normalTexture": {
+        "index": 1,
+        "scale": 1,
+        "texCoord": 0
+      },
+      "occlusionTexture": {
+        "index": 2,
+        "strength": 1,
+        "texCoord": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "metallicFactor": 0.495617378,
+        "roughnessFactor": 0.66291920729999998
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Zeleznak_Zeleznak_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        -0.28456816077232361,
+        -0.95865583419799805,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.95865583419799805,
+        0.28456816077232361,
+        0,
+        0,
+        2.1697146892547607,
+        13.718555450439453,
+        -12.099326133728027,
+        1
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "2c4ad4e8f97649418e93e3d2f915d995.fbx"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2.7545909881591797,
+        -10.335627555847168,
+        1.4005422592163086,
+        1
+      ],
+      "name": "Zeleznak"
+    },
+    {
+      "mesh": 0,
+      "name": "Zeleznak_Zeleznak_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}
+

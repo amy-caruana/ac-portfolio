@@ -1,0 +1,11 @@
+Model Information:
+* title:	Parametric Seating 2
+* source:	https://sketchfab.com/3d-models/parametric-seating-2-ff4a3943d30743fb86f32b4947b8ab7d
+* author:	William Suyoto (https://sketchfab.com/willie.itb)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Parametric Seating 2" (https://sketchfab.com/3d-models/parametric-seating-2-ff4a3943d30743fb86f32b4947b8ab7d) by William Suyoto (https://sketchfab.com/willie.itb) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

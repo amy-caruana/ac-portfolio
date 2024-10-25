@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Textures</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <!--CTRL+ALT+I to inspect VR-->
+    <a-scene>
+
+        <a-assets>
+            <img id="black-white-marble" src="images/black-white.jpg">
+            <img id="white-marble" src="images/plain-white.jpg">
+            <img id="white-gold-marble" src="images/white-gold.jpg">
+            <img id="metal" src="images/metal.jpg">
+            <img id="black-metal" src="images/black-metal.jpg">
+            <img id="wood" src="images/wood.jpg">
+
+        </a-assets>
+        <!--Cursor Component-->
+        <a-camera>
+            <a-entity cursor position="0 0 -1" geometry="primitive:sphere; radius: 0.005" material="color: #ffffff ">
+            </a-entity>
+        </a-camera>
+
+        <a-sky color="#212121"></a-sky>
+   
+        <a-box 
+            src="#black-white-marble"
+            color="lightgrey"
+            position="-2 0 -5">
+        </a-box>
+       
+        <a-box 
+            src="#white-marble"
+            color="lightgrey"
+            position="-2 3 -5">
+        </a-box>
+        
+        <a-box 
+            src="#wood"
+            color="darkgrey"
+            position="0 0 -5">
+        </a-box>
+
+        <a-box
+            src="#white-gold-marble"
+            color="lightgrey"
+            position="0 3 -5">
+        </a-box>
+       
+        <a-box 
+            color="grey"
+            src="#metal"
+            position="2 0 -5"
+        ></a-box>
+       
+        <a-box      
+            src="#black-metal"
+            position="2 3 -5">
+        </a-box>
+
+    </a-scene>
+</body>
+
+</html>

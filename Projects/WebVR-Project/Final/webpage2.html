@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@5.0.0/dist/aframe-event-set-component.min.js"></script>
+</head>
+
+<!--CTRL+ALT+I to inspect VR-->
+
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="abstract" src="images/abstract.jpg">
+            <img id="white-marble" src="images/black-marble.jpg">
+            <img id="metal" src="images/metal.jpg">
+            <img id="black-metal" src="images/black-metal.jpg">
+            <img id="white-gold" src="images/white-gold.jpg">
+            <img id="logo" src="images/Logo.png">
+        </a-assets>
+
+        <!--Adding an environement preset-->
+        <a-entity
+            environment="preset: forest; dressingAmount: 400; groundColor: burlywood; groundColor2: navajowhite; groundTexture: squares; dressingColor: #568F56;">
+        </a-entity>
+
+        <a-text value="The background (sky + ground) were implemented via the use of a libary called 'a-frame environment component'. 
+
+        This library allowed me to choose a preset for the background and alter it however I wanted to (in my case I added more trees and changed a few of the colours)." position="-1.74825 2.616 -2.53027" text="color: #000000"></a-text>
+
+        <!--Cursor Component-->
+        <a-camera camera="" position="-3.174 1.6 2.93648" rotation="-4.583662361046592 9.39650784014548 0">
+            <a-entity cursor position="0 0 -1" geometry="primitive: sphere; radius: 0.005" material="color: orange">
+            </a-entity>
+        </a-camera>
+
+        <!--Box with hover event-->
+        <a-box src="#white-gold" position="-5.353 1.6 -3" material="color: white" rotation="-40.83 0 44.03" 
+        event-set__enter="_event:mouseenter; material.color:grey"
+        event-set__leave="_event:mouseleave; material.color:white">
+        </a-box>
+        <a-text value="Box with hover event" position="-6.29118 0.578 -2.78484" text=""></a-text>
+
+        <!--Box with click event-->
+        <a-box color="white" src="#white-marble" position="-2.673 1.600 -3"
+        event-set__tarcol="_event:click;_targer:#white-marble; material.color:salmon">
+        </a-box>
+        <a-text value="Box with click event" position="-3.622 0.8636 -2.53"></a-text>
+
+        <!--Logo-->
+        <a-entity position="-4 4 -6.454" rotation="0 360 0"
+            animation="property: rotation; loop: true; dur: 10000">
+            <a-box src="#logo" position="0 0 0" scale="2 2 2">
+            </a-box>
+        </a-entity>
+        <a-text position="-4.657 5.159 -4.81254" text="value: Rotating logo"></a-text>
+
+        <!--Tweaking Lights-->
+        <a-entity light="intensity: 0.61; color: #e34f4f" position="-9.44669 7.339 -2.66492"></a-entity>
+        <a-text value="A pink light on the top left corner of the page was also added in order to act as a pink ambient light" position="-7.90322 2.985 -2.53027" text="color: #000000; align: center"></a-text>
+        
+    </a-scene>
+</body>
+
+</html>

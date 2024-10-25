@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Linking the CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Assignment</title>
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>Prototype Presentation</h1>
+    </div>
+
+    <style>
+        .item1 {
+            grid-area: textures;
+        }
+
+        .item2 {
+            grid-area: font;
+        }
+
+        .item3 {
+            grid-area: colour;
+        }
+
+        .item4 {
+            grid-area: example;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'textures textures colour colour example example'
+                'font font colour colour example example';
+            grid-gap: 10px;
+            background-color: #bac6cf;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+    </style>
+
+    <div class="grid-container">
+
+        <div class="item1">
+            <header>Textures</header>
+
+            <p>Click the button below in order to view the textures that will be used within the final project</p>
+            <button onclick="document.location='textures.html'" class="button button1">Click Me</button> 
+        </div>
+
+        <div class="item2">
+            <header>Font Styles</header>         
+            <h5>Mile Heights:</h5>
+            <img src="images/Mile-Heights.JPG" width="600" height="80">
+            <h5>Poppins:</h5>
+            <img src="images/Poppins.JPG" width="600" height="60">
+            <h5>Spartan:</h5>
+            <img src="images/Spartan.JPG" width="600" height="60"> 
+        </div>
+
+        <div class="item3">
+            <header>Colour Scheme</header>
+            <br>
+            <img src="images/colour_scheme.png" width="600" height="500">
+        </div>
+
+        <div class="item4">
+            <header>Example</header>
+            <br>
+            <p>Once the below button is clicked, it will redirect you to a VR webpage in which you will be presented with 3 
+                different components. One of them is a GLTF model that I have implemented, these will be used in the final project 
+                and will be placed throughout the art gallery that I will be creating. The other 2 components are a traffic light model which 
+                was created that once the button is pressed, the lights will change from green to red which will then show the user that they 
+                can safely walk towards the art gallery (this was created as an extra and fun feature which I thought will give more interactivity to the user), 
+                and the last component is a rotating sphere which is there as an abstract art piece which is on display and infinitely rotates.
+            </p>
+            <img src="images/3models.JPG" width="400" height="300">
+            <br>
+            <button onclick="document.location='example.html'" class="button button1">Click Me</button> 
+        </div>
+    </div>
+
+    <!--Creating the footer-->
+    <div class="footer">
+        <p>&copy; Amy Caruana 6.1A</p>
+    </div>
+
+</body>
+
+</html>
