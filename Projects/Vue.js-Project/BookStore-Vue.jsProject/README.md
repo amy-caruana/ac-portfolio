@@ -1,4 +1,4 @@
-# home_assignment
+# Vue.js Bookstore
 
 ## Project setup
 ```
