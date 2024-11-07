@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fi/pufeyYj9ZprWdZBJMbLQEfBmIGFHQ1521FeK+0g0=",
+  "Hash": "X3bxty3M5Z0pbkrKeuZZNZNV0IDQ9v5CJMgbDmLnDrI=",
   "Source": "BlazorAppTest",
   "BasePath": "_content/BlazorAppTest",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BlazorAppTest\\wwwroot",
       "Source": "BlazorAppTest",
-      "ContentRoot": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\",
+      "ContentRoot": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\",
       "BasePath": "_content/BlazorAppTest",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorAppTest.styles.css",
+      "Identity": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorAppTest.styles.css",
       "SourceId": "BlazorAppTest",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/BlazorAppTest",
       "RelativePath": "BlazorAppTest.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorAppTest.styles.css"
+      "OriginalItemSpec": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorAppTest.styles.css"
     },
     {
-      "Identity": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorAppTest.bundle.scp.css",
+      "Identity": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorAppTest.bundle.scp.css",
       "SourceId": "BlazorAppTest",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/BlazorAppTest",
       "RelativePath": "BlazorAppTest.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorAppTest.bundle.scp.css"
+      "OriginalItemSpec": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorAppTest.bundle.scp.css"
     },
     {
-      "Identity": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\app.css",
+      "Identity": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\app.css",
       "SourceId": "BlazorAppTest",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\",
+      "ContentRoot": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\",
       "BasePath": "_content/BlazorAppTest",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "BlazorAppTest",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\",
+      "ContentRoot": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\",
       "BasePath": "_content/BlazorAppTest",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "BlazorAppTest",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\",
+      "ContentRoot": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\",
       "BasePath": "_content/BlazorAppTest",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\favicon.png",
+      "Identity": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\favicon.png",
       "SourceId": "BlazorAppTest",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\",
+      "ContentRoot": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\",
       "BasePath": "_content/BlazorAppTest",
       "RelativePath": "favicon.png",
       "AssetKind": "All",

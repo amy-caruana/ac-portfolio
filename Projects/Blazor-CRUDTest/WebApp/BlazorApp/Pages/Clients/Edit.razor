@@ -1,0 +1,146 @@
+﻿@page "/Clients/Edit/{Id:int}"
+
+@using BlazorApp.Models
+@using System.Text.Json.Nodes
+@inject HttpClient Http
+@inject NavigationManager navManager
+
+
+<div class="row">
+	<div class="col-lg-8">
+		<h1 class="mb-5">Edit Client</h1>
+
+		@if (client == null)
+		{
+			<p><em>Loading...</em></p>
+		}
+		else
+		{
+			<div class="row mb-3">
+				<label class="col-md-4 col-form-label">Client ID</label>
+				<div class="col-md-8">
+					<input class="form-control-plaintext" value="@Id" readonly>
+				</div>
+			</div>
+
+			<div class="row mb-3">
+				<label class="col-md-4 col-form-label">First Name</label>
+				<div class="col-md-8">
+					<input class="form-control" @bind="ClientData.FirstName">
+					<span class="text-danger">@Errors["FirstName"]?[0]</span>
+				</div>
+			</div>
+
+			<div class="row mb-3">
+				<label class="col-md-4" col-form-label">Last Name</label>
+				<div class="col-md-8">
+					<input class="form-control" @bind="ClientData.LastName">
+					<span class="text-danger">@Errors["LastName"]?[0]</span>
+				</div>
+			</div>
+
+			<div class="row mb-3">
+				<label class="col-md-4" col-form-label">Email</label>
+				<div class="col-md-8">
+					<input class="form-control" @bind="ClientData.Email">
+					<span class="text-danger">@Errors["Email"]?[0]</span>
+				</div>
+			</div>
+
+			<div class="row mb-3">
+				<label class="col-md-4" col-form-label">Phone Number</label>
+				<div class="col-md-8">
+					<input class="form-control" @bind="ClientData.PhoneNumber">
+					<span class="text-danger">@Errors["PhoneNumber"]?[0]</span>
+				</div>
+			</div>
+
+			<div class="row mb-3">
+				<label class="col-md-4" col-form-label">Address</label>
+				<div class="col-md-8">
+					<input class="form-control" @bind="ClientData.Address">
+					<span class="text-danger">@Errors["Address"]?[0]</span>
+				</div>
+			</div>
+
+			<div class="row mb-3">
+				<label class="col-md-4" col-form-label">Status</label>
+				<div class="col-md-8">
+					<select class="form-select" @bind="ClientData.Status">
+						<option value='New'>New</option>
+						<option value='Permanent'>Permanent</option>
+						<option value='Lead'>Lead</option>
+						<option value='Occasional'>Occasional</option>
+						<option value='Inactive'>Inactive</option>
+					</select>
+					<span class="text-danger">@Errors["Status"]?[0]</span>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="offset-md-4 col-md border-4 d-grid">
+					<button class="btn btn-primary" @onclick="SaveClient">Submit</button>
+				</div>
+				<div class="col-md-4 d-grid">
+					<a class="btn btn-outline-primary" href="/Clients">Cancel</a>
+				</div>
+			</div>
+		}
+	</div>
+</div>
+
+
+@code {
+	[Parameter]
+	public int Id { set; get; }
+	public Client? client = null;
+	public ClientDto ClientData { set; get; } = new();
+	public JsonNode Errors { set; get; } = new JsonObject();
+
+
+	protected override async Task OnParametersSetAsync()
+	{
+		try
+		{
+			client = await Http.GetFromJsonAsync<Client>("https://localhost:7005/api/Clients/" + Id);
+			//if checks if client is null before accessing FirstName value, will return null if it is
+			//if it is not null it will check if client?.FirstName is null and if it is it will return an empty string
+			ClientData.FirstName = client?.FirstName ?? "";
+			ClientData.LastName = client?.LastName ?? "";
+			ClientData.Email = client?.Email ?? "";
+			ClientData.PhoneNumber = client?.PhoneNumber ?? "";
+			ClientData.Address = client?.Address ?? "";
+			ClientData.Status = client?.Status ?? "";
+		}
+		catch (Exception ex)
+		{
+			Console.WriteLine("Exception: " + ex.Message);
+		}
+	}
+
+	protected async Task SaveClient()
+	{
+		var response = await Http.PutAsJsonAsync("https://localhost:7005/api/Clients/" + Id, ClientData);
+
+		if (response.IsSuccessStatusCode)
+		{
+			//redirect to list of clients
+			navManager.NavigateTo("/Clients");
+		}
+		else
+		{
+			var strResponse = await response.Content.ReadAsStringAsync();
+
+			try
+			{
+				var jsonResponse = JsonNode.Parse(strResponse);
+				Errors = jsonResponse?["errors"] ?? new JsonObject();
+			}
+
+			catch (Exception ex)
+			{
+
+			}
+		}
+	}
+}

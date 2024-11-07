@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\BlazorAppTest.csproj": {}
+    "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\BlazorAppTest.csproj": {}
   },
   "projects": {
-    "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\BlazorAppTest.csproj": {
+    "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\BlazorAppTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\BlazorAppTest.csproj",
+        "projectUniqueName": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\BlazorAppTest.csproj",
         "projectName": "BlazorAppTest",
-        "projectPath": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\BlazorAppTest.csproj",
+        "projectPath": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\BlazorAppTest.csproj",
         "packagesPath": "C:\\Users\\Amy\\.nuget\\packages\\",
-        "outputPath": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\obj\\",
+        "outputPath": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,18 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

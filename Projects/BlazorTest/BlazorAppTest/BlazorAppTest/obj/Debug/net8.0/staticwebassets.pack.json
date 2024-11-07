@@ -1,23 +1,23 @@
 {
   "Files": [
     {
-      "Id": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorAppTest.bundle.scp.css",
+      "Id": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorAppTest.bundle.scp.css",
       "PackagePath": "staticwebassets\\BlazorAppTest.bundle.scp.css"
     },
     {
-      "Id": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\app.css",
+      "Id": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "E:\\My Stuff\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\favicon.png",
+      "Id": "G:\\My_Stuff\\Github-Portfolio\\ac-portfolio\\Projects\\BlazorTest\\BlazorAppTest\\BlazorAppTest\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {

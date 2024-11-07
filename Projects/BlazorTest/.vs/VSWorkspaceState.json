@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BlazorAppTest",
+    "\\BlazorAppTest\\BlazorAppTest",
+    "\\BlazorAppTest\\BlazorAppTest\\Components",
+    "\\BlazorAppTest\\BlazorAppTest\\Migrations"
+  ],
+  "SelectedNode": "\\BlazorAppTest\\BlazorAppTest\\Migrations\\20241107135647_FirstMigration.cs",
+  "PreviewInSolutionExplorer": false
+}

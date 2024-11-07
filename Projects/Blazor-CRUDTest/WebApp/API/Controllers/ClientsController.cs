@@ -1,0 +1,116 @@
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using API.Models;
+using API.Services;
+
+namespace API.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class ClientsController : ControllerBase
+    {
+        private readonly ApplicationDbContext context;
+
+        public ClientsController(ApplicationDbContext context)
+        {
+            this.context = context;
+        }
+
+        [HttpGet]
+        public List<Client> GetClients()
+        {
+            return context.Clients.OrderByDescending(c => c.Id).ToList();
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetClient(int id)
+        {
+            var client = context.Clients.Find(id);
+            if (client == null)
+            {
+                return NotFound();
+            }
+            return Ok(client);
+        }
+
+        [HttpPost]
+        public IActionResult CreateClient(ClientDto clientDto)
+        {
+
+            //submitted data is valid
+
+            var otherClient = context.Clients.FirstOrDefault(c => c.Email == clientDto.Email);
+
+            if (otherClient != null)
+            {
+                ModelState.AddModelError("Email", "The Email Address is already used");
+                var validation = new ValidationProblemDetails(ModelState);
+                return BadRequest(validation);
+            }
+
+            var client = new Client
+            {
+                FirstName = clientDto.FirstName,
+                LastName = clientDto.LastName,
+                Email = clientDto.Email,
+                PhoneNumber = clientDto.PhoneNumber ?? "",
+                Address = clientDto.Address ?? "",
+                Status = clientDto.Status,
+                CreatedAt = DateTime.Now,
+            };
+
+            context.Clients.Add(client);
+            context.SaveChanges();
+
+            return Ok(client);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult EditClient(int id, ClientDto clientDto)
+        {
+			var otherClient = context.Clients.FirstOrDefault(c => c.Id != id && c.Email == clientDto.Email);
+
+			if (otherClient != null)
+			{
+				ModelState.AddModelError("Email", "The Email Address is already used");
+				var validation = new ValidationProblemDetails(ModelState);
+				return BadRequest(validation);
+			}
+
+            //if client with that id not found
+            var client = context.Clients.Find(id);
+            if (client == null)
+            {
+                return NotFound();
+            }
+
+            client.FirstName = clientDto.FirstName;
+            client.LastName = clientDto.LastName;
+            client.Email = clientDto.Email;
+            client.PhoneNumber = clientDto.PhoneNumber ?? "";
+            client.Address = clientDto.Address ?? "";
+            client.Status = clientDto.Status;
+
+            context.SaveChanges();
+
+			return Ok(client);
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteClient(int id)
+        {
+            var client = context.Clients.Find(id);
+            
+            if(client == null)
+            {
+                return NotFound();
+            }
+
+            context.Clients.Remove(client);
+            context.SaveChanges();
+
+            return Ok();
+        }
+
+	}
+}
