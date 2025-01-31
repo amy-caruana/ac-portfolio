@@ -22,7 +22,7 @@ This project implements a waste detection model using machine learning technique
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/amy-caruana/ac-portfolio.git
+   git clone https://github.com/amy-caruana/ac-portfolio/Projects/Python-Waste-Detection-Model.git
    cd ac-portfolio/Projects/Python-Waste-Detection-Model
    ```
 2. Create a virtual environment and activate it:
@@ -40,11 +40,11 @@ This project implements a waste detection model using machine learning technique
 1. Prepare your dataset by placing images in the `data/` folder.
 2. Run the training script:
    ```bash
-   python train_model.py
+   python task4_model.py
    ```
 3. Evaluate the model or use it for predictions:
    ```bash
-   python predict.py --image_path path_to_image.jpg
+   python task5_pt2.py --image_path path_to_image.jpg
    ```
 
 ## Project Structure
