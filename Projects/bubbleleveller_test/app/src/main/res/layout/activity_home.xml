@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    tools:context=".HomeActivity">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/headingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bubble Leveller"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#2f3740"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp" />
+
+    <!-- Start Button -->
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:minWidth="200dp"
+        android:minHeight="60dp"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
