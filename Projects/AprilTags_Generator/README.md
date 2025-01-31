@@ -66,5 +66,5 @@ This project is licensed under the MIT License. See `LICENSE` for more details.
 
 ## Contact
 
-For any questions or inquiries, please contact amy.caruana\@gmail.com.
+For any questions or inquiries, please contact amycaruana2000\@gmail.com.
 
