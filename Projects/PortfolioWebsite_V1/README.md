@@ -55,7 +55,7 @@ To get started with this project locally, follow these steps:
 
 You can view my portfolio website by visiting the following link:
 
-[🔗 **My Portfolio Website (Version 1)**](https://amy-caruana.github.io/ac-portfolio/)
+[🔗 **My Portfolio Website (Version 1)**](https://ac-portfolio.wuaze.com/)
 
 ---
 
