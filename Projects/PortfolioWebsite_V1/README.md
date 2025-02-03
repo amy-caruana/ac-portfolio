@@ -8,8 +8,7 @@ Welcome to my **Portfolio Website (Version 1)**! This is the first iteration of 
 ## 🌟 Features
 
 ### **1. Interactive 3D Visuals**
-- **Three.js Integration**: Dynamic 3D graphics and animations to enhance the user experience.
-- **Smooth Animations**: Interactive and visually engaging transitions between sections.
+- **Three.js Integration**: Dynamic 3D graphic to enhance the user experience.
 
 ### **2. Responsive Design**
 - **Mobile-First Design**: Optimized for viewing on mobile devices, tablets, and desktops.
