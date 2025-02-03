@@ -4,6 +4,8 @@
 
 The April Tag Generator is a simple tool that allows users to generate April tags by selecting a tag family and inputting three different tag IDs. April tags are widely used for robotics and computer vision applications, providing a robust way to encode data visually.
 
+![Program Output](https://github.com/amy-caruana/ac-portfolio/blob/main/Projects/AprilTags_Generator/output.png)
+
 ## Features
 
 - Select from various April tag families.
@@ -43,10 +45,16 @@ To use or build upon this project, ensure you have the following installed:
 
 Examples of supported families include:
 
-- Tag36h11
-- Tag25h9
-- Tag16h5
-
+- tag16h5
+- tag25h9
+- tag36h10
+- tag36h11
+- tagCircle21h7
+- tagCircle49h12
+- tagCustom48h12
+- tagStandard41h12
+- tagStandard52h13
+  
 ## File Structure
 
 ```
