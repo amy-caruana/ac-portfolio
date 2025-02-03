@@ -1,8 +1,9 @@
 
 # Portfolio Website (Version 1)
 
-Welcome to my **Portfolio Website (Version 1)**! This is the first iteration of my online portfolio, showcasing my skills, projects, and accomplishments. The website is built using **HTML**, **CSS**, **JavaScript**, and **Three.js** for creating dynamic 3D elements.
+Welcome to my **Portfolio Website (Version 1)**! This is the first iteration of my online portfolio, showcasing my skills, projects, and accomplishments. The website was built using **HTML**, **CSS**, **JavaScript**, and **Three.js** for creating dynamic 3D elements.
 
+![Overview Picture](https://github.com/amy-caruana/ac-portfolio/blob/main/Projects/PortfolioWebsite_V1/images/overview.png)
 ---
 
 ## 🌟 Features
