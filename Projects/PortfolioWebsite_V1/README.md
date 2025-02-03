@@ -59,12 +59,6 @@ You can view my portfolio website by visiting the following link:
 
 ---
 
-## 📝 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
----
-
 ## 🤝 Contributing
 
 I welcome contributions! If you'd like to contribute to this project:
