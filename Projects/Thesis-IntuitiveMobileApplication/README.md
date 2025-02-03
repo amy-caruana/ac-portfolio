@@ -1,5 +1,5 @@
 
-# Thesis: Intuitive Mobile Application for Greenhouse Temperature Prediction
+# Intuitive Mobile Application for Greenhouse Temperature Prediction
 
 Welcome to my **Thesis - Intuitive Mobile Application**! This mobile application was developed to help farmers regulate temperatures in greenhouses for optimal crop yield. The application uses **Machine Learning** models (LSTM and GRU) and integrates with a **Weather API** to predict future temperatures based on real-time weather data.
 
