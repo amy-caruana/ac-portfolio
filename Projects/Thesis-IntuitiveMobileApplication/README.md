@@ -64,7 +64,7 @@ This application is designed for use on Android devices. Once deployed on an And
 
 ## 📝 License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/amy-caruana/ac-portfolio/blob/main/Projects/Thesis-IntuitiveMobileApplication/LICENSE.txt) file for more information.
 
 
 ---
