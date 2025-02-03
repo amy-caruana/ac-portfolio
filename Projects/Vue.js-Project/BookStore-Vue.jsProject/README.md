@@ -1,23 +1,27 @@
-# Vue.js Bookstore
+# BookStore - Vue.js Project
 
-## Project setup
-```
-npm install
-```
+Welcome to the **BookStore Vue.js Project**! This project is a simple yet interactive online bookstore built using **Vue.js**. It allows users to browse a variety of books, view detailed information, login and register.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+---
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## ⚙️ Technologies Used
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- **Frontend**: Built with **Vue.js** for dynamic and reactive user interfaces.
+- **State Management**: Utilizes **Vuex** for managing the state of the shopping cart.
+- **Routing**: Uses **Vue Router** to navigate between pages such as the homepage, book details, and cart.
+- **CSS**: Styled with custom **CSS** for a responsive design.
 
-### Online version link:
+---
+
+## 🚀 Installation
+
+To get the project running locally, follow these steps:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/amy-caruana/ac-portfolio.git
+
+
+## Online version link:
 https://bookstoreassigment.web.app/login
 
