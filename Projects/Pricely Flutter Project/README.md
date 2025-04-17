@@ -1,16 +1,39 @@
-# Pricely
+# 🛒 Price Comparator App
 
-A new Flutter project.
+A simple and beautifully designed Flutter application that helps users **compare prices**, **track product history**, and **save favorites** for smarter shopping decisions.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Features
 
-A few resources to get you started if this is your first Flutter project:
+- 🔍 **Price Comparison** — Add products and automatically compare prices per unit (kg, L, unit).
+- 🕘 **History Tracking** — All added products are stored in history with timestamps.
+- ⭐ **Favorites** — Mark products as favorites and access them easily later.
+- 🧾 **Smart Summary** — Best deal and average price shown at a glance.
+- 🧹 **Slide to Delete/Unfavourite** — Intuitive product management.
+- 🎨 **Clean UI** — Gradient app bar, intuitive design, emoji-enhanced labels.
+- 📦 **Local Storage** — Data is saved using SharedPreferences for offline access.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📱 Screenshots
+
+> _Add a few screenshots of your app here to make your repo shine!_
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Flutter SDK: `>=3.7.0 <4.0.0`
+- Dart SDK: `>=2.19.0 <4.0.0`
+- Device/emulator or physical iOS/Android device
+
+### Install
+
+```bash
+git clone https://github.com/your-username/price-comparator.git
+cd price-comparator
+flutter pub get
+flutter run
