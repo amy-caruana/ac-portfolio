@@ -41,5 +41,3 @@ git clone https://github.com/your-username/price-comparator.git
 cd price-comparator
 flutter pub get
 flutter run
-
-
