@@ -18,7 +18,7 @@ A simple and beautifully designed Flutter application that helps users **compare
 
 ## 📱 Screenshots
 
-> _Add a few screenshots of your app here to make your repo shine!_
+> _TBA_
 
 ---
 
