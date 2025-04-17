@@ -37,3 +37,7 @@ git clone https://github.com/your-username/price-comparator.git
 cd price-comparator
 flutter pub get
 flutter run
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
