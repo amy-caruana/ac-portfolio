@@ -30,6 +30,10 @@ A simple and beautifully designed Flutter application that helps users **compare
 - Dart SDK: `>=2.19.0 <4.0.0`
 - Device/emulator or physical iOS/Android device
 
+### 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
+
 ### Install
 
 ```bash
@@ -37,7 +41,3 @@ git clone https://github.com/your-username/price-comparator.git
 cd price-comparator
 flutter pub get
 flutter run
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
