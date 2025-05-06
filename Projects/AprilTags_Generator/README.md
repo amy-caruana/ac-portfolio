@@ -59,7 +59,7 @@ Examples of supported families include:
 
 ```
 AprilTagGenerator/
-|└── generate_tags.py   # Main script for generating April tags
+|└── 3ID_Generation.py   # Main script for generating April tags
 |└── output/            # Directory for generated tags
 |└── README.md         # Project documentation
 ```
